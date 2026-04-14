@@ -103,12 +103,18 @@
       const parentSection = tabContainer.closest('.section') || tabContainer.parentElement;
       const contents = parentSection.querySelectorAll('.tab-content');
 
+      const wrapper = parentSection.querySelector('.products-wrapper');
+
       buttons.forEach(btn => {
         btn.addEventListener('click', () => {
           const target = btn.getAttribute('data-tab');
 
           buttons.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
+
+          if (wrapper) {
+            wrapper.classList.toggle('show-all', target === 'all');
+          }
 
           contents.forEach(content => {
             if (target === 'all') {

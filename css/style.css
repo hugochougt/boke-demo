@@ -644,6 +644,18 @@ p {
   gap: 24px;
 }
 
+.products-wrapper.show-all {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.products-wrapper.show-all .tab-content.active {
+  display: contents;
+}
+.products-wrapper.show-all .product-grid {
+  display: contents;
+}
+
 /* --- Case Card --- */
 .case-card {
   background: var(--white);
@@ -1332,6 +1344,7 @@ p {
 @media (max-width: 1024px) {
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .products-wrapper.show-all { grid-template-columns: repeat(3, 1fr); }
   .advantage-grid { grid-template-columns: repeat(3, 1fr); }
   .strategy-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -1382,6 +1395,7 @@ p {
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .feature-grid { grid-template-columns: 1fr; }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-wrapper.show-all { grid-template-columns: repeat(2, 1fr); }
   .scene-grid { grid-template-columns: repeat(2, 1fr); }
   .case-grid { grid-template-columns: 1fr; }
   .advantage-grid { grid-template-columns: repeat(2, 1fr); }
