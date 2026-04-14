@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOKE HiScene - 楼宇智慧照明控制系统</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">B</div>
+        BOKE <span>HiScene</span>
+      </a>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="system.html" data-i18n="nav.system">系统方案</a>
+          <a href="products.html" data-i18n="nav.products">产品中心</a>
+          <a href="cases.html" data-i18n="nav.cases">项目案例</a>
+          <a href="contact.html" data-i18n="nav.contact">联系我们</a>
+        </div>
+        <div class="lang-switcher">
+          <button data-lang="zh" class="active">中</button>
+          <button data-lang="en">EN</button>
+          <button data-lang="de">DE</button>
+        </div>
+        <button class="menu-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span data-i18n="hero.badge">DALI-2 国际标准 · 智慧照明</span>
+        </div>
+        <h1>
+          <span data-i18n="hero.title">HiScene</span><br>
+          <span data-i18n="hero.title2" style="font-size:0.7em; font-weight:600;">楼宇智慧照明控制系统</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          基于DALI-2国际标准，面向室内智能照明应用的综合性智能控制系统。支持小规模到超大规模部署，本地脱网可靠运行。
+        </p>
+        <div class="btn-group">
+          <a href="system.html" class="btn btn-primary btn-lg" data-i18n="hero.btn.solution">了解系统方案</a>
+          <a href="contact.html" class="btn btn-outline btn-lg" data-i18n="hero.btn.contact">预约参观</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-placeholder">
+          <span data-i18n="hero.image.alt">建筑效果图</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">16<span>+</span></div>
+          <div class="stat-label" data-i18n="stat.years">年行业经验</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40000<span>m²</span></div>
+          <div class="stat-label" data-i18n="stat.area">生产基地</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">80<span>+</span></div>
+          <div class="stat-label" data-i18n="stat.rd">研发人员</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100<span>+</span></div>
+          <div class="stat-label" data-i18n="stat.patents">自主专利</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="system.title">系统概述</h2>
+        <p data-i18n="system.desc">HiScene是一套面向室内智能照明应用的综合性智能控制系统</p>
+      </div>
+      <p style="max-width:800px; margin:0 auto 40px; text-align:center; color:var(--gray-600);" data-i18n="system.intro">
+        该系统不仅支持标准DALI有线和无线设备，同时还支持窗帘、空调、新风等设备。支持小规模到大规模的系统控制应用，支持离网运行和远程调试，支持多账户和权限管理，支持复杂的设备联动和丰富逻辑功能。适合高端办公照明、工厂照明、医疗照明、商业照明、康养照明、球场照明、博物馆照明等设备数量较多、需要本地运行、工作稳定可靠的应用领域。
+      </p>
+      <div class="arch-diagram">
+        <svg viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Simplified architecture diagram -->
+          <!-- Cloud/Server layer -->
+          <rect x="300" y="10" width="200" height="50" rx="8" fill="#E6F7FF" stroke="#00AEEF" stroke-width="1.5"/>
+          <text x="400" y="40" text-anchor="middle" fill="#0D2B45" font-size="13" font-weight="600">Web/App/Pad</text>
+          <!-- Router -->
+          <rect x="340" y="85" width="120" height="40" rx="6" fill="#F0F4F8" stroke="#CBD5E1" stroke-width="1"/>
+          <text x="400" y="110" text-anchor="middle" fill="#64748B" font-size="11">TCP/IP</text>
+          <line x1="400" y1="60" x2="400" y2="85" stroke="#CBD5E1" stroke-width="1.5"/>
+          <!-- Gateway layer -->
+          <rect x="120" y="150" width="160" height="50" rx="8" fill="#00AEEF" fill-opacity="0.1" stroke="#00AEEF" stroke-width="1.5"/>
+          <text x="200" y="180" text-anchor="middle" fill="#0D2B45" font-size="12" font-weight="600">Gateway (DGES01)</text>
+          <rect x="520" y="150" width="160" height="50" rx="8" fill="#00AEEF" fill-opacity="0.1" stroke="#00AEEF" stroke-width="1.5"/>
+          <text x="600" y="180" text-anchor="middle" fill="#0D2B45" font-size="12" font-weight="600">Gateway (DGES02)</text>
+          <line x1="400" y1="125" x2="200" y2="150" stroke="#00AEEF" stroke-width="1.5" stroke-dasharray="4"/>
+          <line x1="400" y1="125" x2="600" y2="150" stroke="#00AEEF" stroke-width="1.5" stroke-dasharray="4"/>
+          <!-- DALI Bus -->
+          <line x1="100" y1="225" x2="340" y2="225" stroke="#00AEEF" stroke-width="2"/>
+          <text x="220" y="218" text-anchor="middle" fill="#00AEEF" font-size="10" font-weight="600">DALI Bus</text>
+          <line x1="200" y1="200" x2="200" y2="225" stroke="#00AEEF" stroke-width="1.5"/>
+          <line x1="460" y1="225" x2="700" y2="225" stroke="#00AEEF" stroke-width="2"/>
+          <text x="580" y="218" text-anchor="middle" fill="#00AEEF" font-size="10" font-weight="600">DALI Bus</text>
+          <line x1="600" y1="200" x2="600" y2="225" stroke="#00AEEF" stroke-width="1.5"/>
+          <!-- Devices -->
+          <rect x="80" y="245" width="70" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="115" y="269" text-anchor="middle" fill="#64748B" font-size="9">LED Driver</text>
+          <rect x="165" y="245" width="70" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="200" y="269" text-anchor="middle" fill="#64748B" font-size="9">Sensor</text>
+          <rect x="250" y="245" width="70" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="285" y="269" text-anchor="middle" fill="#64748B" font-size="9">Panel</text>
+          <rect x="465" y="245" width="70" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="500" y="269" text-anchor="middle" fill="#64748B" font-size="9">Switch</text>
+          <rect x="550" y="245" width="70" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="585" y="269" text-anchor="middle" fill="#64748B" font-size="9">Dimmer</text>
+          <rect x="635" y="245" width="70" height="40" rx="4" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="670" y="269" text-anchor="middle" fill="#64748B" font-size="9">Curtain</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Advantages -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="advantages.title">核心优势</h2>
+        <p data-i18n="advantages.subtitle">15大核心技术优势，打造可靠的楼宇智慧照明解决方案</p>
+      </div>
+      <div class="feature-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/><line x1="6" y1="6" x2="10" y2="10"/><line x1="14" y1="10" x2="18" y2="6"/><line x1="6" y1="18" x2="10" y2="14"/><line x1="14" y1="14" x2="18" y2="18"/></svg>
+          </div>
+          <h3 data-i18n="adv.distributed">分布式架构</h3>
+          <p data-i18n="adv.distributed.desc">一个节点失效不影响其他节点</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01"/></svg>
+          </div>
+          <h3 data-i18n="adv.largescale">大规模控制</h3>
+          <p data-i18n="adv.largescale.desc">支持1-10万的设备数量接入和联动</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3 data-i18n="adv.offline">本地脱网运行</h3>
+          <p data-i18n="adv.offline.desc">不用连接外网稳定运行所有功能</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+          </div>
+          <h3 data-i18n="adv.network">有线/无线网络</h3>
+          <p data-i18n="adv.network.desc">支持有线网络和无线网络</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+          </div>
+          <h3 data-i18n="adv.remote.debug">远程调试</h3>
+          <p data-i18n="adv.remote.debug.desc">不用到施工现场调试</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 data-i18n="adv.multiplatform">多端管理</h3>
+          <p data-i18n="adv.multiplatform.desc">支持手机/平板/网页控制和管理</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Scenes -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="scenes.title">应用场景</h2>
+        <p data-i18n="scenes.subtitle">适用于多种高端商业和公共建筑照明场景</p>
+      </div>
+      <div class="scene-grid">
+        <div class="scene-card">
+          <div class="scene-card-bg" style="background: linear-gradient(135deg, #0D2B45 0%, #1A5276 100%);"></div>
+          <div class="scene-card-content">
+            <h3 data-i18n="scene.office">智慧办公照明</h3>
+            <p data-i18n="scene.office.desc">高端办公楼 / 工厂照明</p>
+          </div>
+        </div>
+        <div class="scene-card">
+          <div class="scene-card-bg" style="background: linear-gradient(135deg, #0D2B45 0%, #2C3E50 100%);"></div>
+          <div class="scene-card-content">
+            <h3 data-i18n="scene.commercial">智慧商业照明</h3>
+            <p data-i18n="scene.commercial.desc">商场 / 酒店 / 4S店</p>
+          </div>
+        </div>
+        <div class="scene-card">
+          <div class="scene-card-bg" style="background: linear-gradient(135deg, #0D2B45 0%, #1E4D6E 100%);"></div>
+          <div class="scene-card-content">
+            <h3 data-i18n="scene.healthcare">智慧康养照明</h3>
+            <p data-i18n="scene.healthcare.desc">医院 / 康养中心</p>
+          </div>
+        </div>
+        <div class="scene-card">
+          <div class="scene-card-bg" style="background: linear-gradient(135deg, #1A2332 0%, #34495E 100%);"></div>
+          <div class="scene-card-content">
+            <h3 data-i18n="scene.culture">文体场馆照明</h3>
+            <p data-i18n="scene.culture.desc">博物馆 / 科技馆 / 球场</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Cases -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="cases.title">项目案例</h2>
+        <p data-i18n="cases.subtitle">遍布全球的智慧照明项目实践</p>
+      </div>
+      <div class="case-grid">
+        <div class="case-card">
+          <div class="case-card-image">
+            <span data-i18n="case.pingan">深圳平安大厦</span>
+          </div>
+          <div class="case-card-body">
+            <h3 data-i18n="case.pingan">深圳平安大厦</h3>
+            <p data-i18n="case.pingan.desc">超大规模智能照明控制系统部署</p>
+            <span class="case-tag" data-i18n="tag.commercial">商业照明</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card-image" style="background: linear-gradient(135deg, #1A3D5C, #2C5F7C);">
+            <span data-i18n="case.berlin">德国柏林机场</span>
+          </div>
+          <div class="case-card-body">
+            <h3 data-i18n="case.berlin">德国柏林机场</h3>
+            <p data-i18n="case.berlin.desc">国际机场智慧照明解决方案</p>
+            <span class="case-tag" data-i18n="tag.transport">交通照明</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-card-image" style="background: linear-gradient(135deg, #0E4D6E, #1A6E8E);">
+            <span data-i18n="case.tiktok">上海/成都 抖音大厦</span>
+          </div>
+          <div class="case-card-body">
+            <h3 data-i18n="case.tiktok">上海/成都 抖音大厦</h3>
+            <p data-i18n="case.tiktok.desc">互联网科技企业办公照明</p>
+            <span class="case-tag" data-i18n="tag.office">办公照明</span>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="cases.html" class="btn btn-outline-dark" data-i18n="cases.title">查看更多案例</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-i18n="cta.title">开启您的智慧照明之旅</h2>
+      <p data-i18n="cta.desc">联系我们的专业团队，获取定制化的楼宇智慧照明解决方案</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.btn.contact">联系我们</a>
+        <a href="products.html" class="btn btn-outline btn-lg" data-i18n="cta.btn.products">浏览产品</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>BOKE HiScene</h3>
+          <p data-i18n="footer.brand.desc">
+            广东柏科电源有限公司 — 高可靠性工程电源 | 照明电气系统集成商。Blue Technology for Green。
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.quicklinks">快速链接</h4>
+          <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="system.html" data-i18n="nav.system">系统方案</a>
+          <a href="products.html" data-i18n="nav.products">产品中心</a>
+          <a href="cases.html" data-i18n="nav.cases">项目案例</a>
+          <a href="contact.html" data-i18n="nav.contact">联系我们</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.products">产品系列</h4>
+          <a href="products.html" data-i18n="products.tab.system">系统设备</a>
+          <a href="products.html" data-i18n="products.tab.sensor">传感器</a>
+          <a href="products.html" data-i18n="products.tab.panel">面板与触摸屏</a>
+          <a href="products.html" data-i18n="products.tab.driver">智能驱动器</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer.support">支持与服务</h4>
+          <a href="contact.html" data-i18n="footer.techsupport">技术支持</a>
+          <a href="#" data-i18n="footer.download">资料下载</a>
+          <a href="#" data-i18n="footer.faq">常见问题</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.copyright">© 2025 广东柏科电源有限公司 版权所有</span>
+        <span>www.bokedriver.com.cn</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
