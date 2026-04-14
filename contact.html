@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>联系我们 - BOKE HiScene</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 
@@ -158,10 +159,8 @@
         </div>
       </div>
 
-      <!-- Map Placeholder -->
-      <div class="map-placeholder" data-i18n="contact.map.placeholder">
-        地图显示区域
-      </div>
+      <!-- Map -->
+      <div id="contact-map" class="contact-map"></div>
     </div>
   </section>
 
@@ -202,7 +201,22 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    (function() {
+      var lat = 22.4951;
+      var lng = 113.3784;
+      var map = L.map('contact-map').setView([lat, lng], 15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19
+      }).addTo(map);
+      L.marker([lat, lng]).addTo(map)
+        .bindPopup('<b>BOKE 柏科</b><br>广东省中山市南区西环五路51号')
+        .openPopup();
+    })();
+  </script>
 </body>
 </html>
